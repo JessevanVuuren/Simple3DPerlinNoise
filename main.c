@@ -15,7 +15,7 @@ int main(void) {
     SetTargetFPS(60);
     // srand(time(NULL));
 
-    int *per = make_permutation();
+    int *permutation_table = make_permutation();
 
     Image img = GenImageColor(screenWidth, screenHeight, WHITE);
     Color *pixels = LoadImageColors(img);
@@ -25,10 +25,13 @@ int main(void) {
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
+        
 
         for (int y = 0; y < screenHeight; y++) {
             for (int x = 0; x < screenWidth; x++) {
-                float value = Noise2D(x / (float)screenHeight * size, y / (float)screenWidth * size, per);
+                float time = GetTime() * 0.5;
+
+                float value = Noise3D(x / (double)screenHeight * size, y / (double)screenWidth * size, time, permutation_table);
                 int color = (int)floor(((value + 1) * 127.5));
 
                 pixels[y * screenWidth + x] = (Color){color, color, color, 255};

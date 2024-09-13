@@ -5,7 +5,7 @@ This C project demonstrates the generation and visualization of a 2D noise map u
 
 ---
 
-Most of the code used to implement the Perlin noise function is adapted from the [Perlin Noise Algorithm Guide by Rachid Touti](https://rtouti.github.io/graphics/perlin-noise-algorithm).
+Most of the code used to implement the Perlin noise function is adapted from the [Perlin Noise Algorithm Guide by Rachid Touti](https://rtouti.github.io/graphics/perlin-noise-algorithm) and [Improved Noise reference implementation by KEN PERLIN](https://cs.nyu.edu/~perlin/noise/)
 
 ### Features
 - Generates a 2D Perlin noise map.
