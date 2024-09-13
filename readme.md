@@ -1,4 +1,7 @@
 # Perlin Noise Map Display using Raylib
+
+![noice](https://github.com/JessevanVuuren/Simple3DPerlinNoise/blob/master/gif/example.gif?raw=true)
+
 ## Overview
 This C project demonstrates the generation and visualization of a 2D noise map using the Perlin noise algorithm. The noise map is rendered on a window using Raylib, where each point in the grid is assigned a grayscale value corresponding to the Perlin noise value for its (x, y) coordinates.
 
