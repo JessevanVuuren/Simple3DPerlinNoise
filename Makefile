@@ -7,9 +7,9 @@ LIBS = -lraylib -lopengl32 -lgdi32 -lwinmm
 
 FLAGS = -Werror
 
-SRC = perlin.c
+SRC = main.c
 
-TARGET = main
+TARGET = out
 
 # Target to compile the program
 $(TARGET): $(SRC)
